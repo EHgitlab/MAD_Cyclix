@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="#03A9F4"
+    android:foregroundGravity="center"
     tools:context=".MainActivity">
 
     <!-- Map Area -->
@@ -44,6 +45,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#DDDDDD"
+        android:gravity="center"
         android:padding="8dp"
         android:text="Your Location - Singapore Polytechnic, 139651"
         android:textColor="@android:color/black"
@@ -62,7 +64,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
-        android:background="#F5F5F5"
+        android:background="@drawable/rounded_white_background"
         android:orientation="horizontal"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,16 +75,16 @@
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:background="@color/teal_200"
+            android:background="@drawable/rounded_edittext_background"
             android:queryHint="Search your route..." />
 
         <!-- Plan Button -->
         <Button
             android:id="@+id/planButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="16dp"
             android:backgroundTint="#FF0000"
             android:text="Plan"
@@ -97,7 +99,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:background="#FFC107"
+        android:background="@drawable/rounded_white_background"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:padding="16dp"
@@ -116,6 +118,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Where are you heading?"
                 android:textColor="#000000"
                 android:textSize="20dp"
