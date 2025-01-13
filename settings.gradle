@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Ernest_Tony_Cyclix"
+rootProject.name = "ProjectMAD"
 include ':app'
